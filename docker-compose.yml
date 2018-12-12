@@ -1,0 +1,21 @@
+# This file is designed for setting up email-sender on a docker server
+# It will connect to a MongoDb instance named mongodb at the same
+# docker server.
+
+version: '2'
+services:
+  rest-email:
+    container_name: email-sender
+    image: fredrikblix/email-sender:latest
+    restart: always
+    network_mode: bridge
+    environment:
+        - DEBUG=main,emails
+        - email_SMTP_HOST=smtp.server.com
+        - email_SMTP_PORT=25
+        - email_SMTP_SECURE=
+
+    ports:
+        - 8000:80
+    external_links:
+        - mongodb

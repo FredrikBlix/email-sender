@@ -1,0 +1,29 @@
+{
+    "application": {
+        "name": "email-sender"
+    },
+    "emails": {
+        "smtp": {
+            "host": "",
+            "port": 0,
+            "secure": false,
+            "auth": {
+                "username": "",
+                "password": ""
+            }
+        }
+    },
+    "express": {
+        "port": 80
+    },
+    "mongodb": {
+        "host": "mongodb",
+        "port": 27017,
+        "database": "rest-email",
+        "auth": {
+            "username": "",
+            "password": ""
+        },
+        "options": ""
+    }
+}

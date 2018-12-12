@@ -1,0 +1,26 @@
+{
+    "emails": {
+        "smtp": {
+            "host": "email_SMTP_HOST",
+            "port": "email_SMTP_PORT",
+            "secure": "email_SMTP_SECURE",
+            "auth": {
+                "username": "email_SMTP_USERNAME",
+                "password": "email_SMTP_PASSWORD"
+            }
+        }
+    },
+    "express": {
+        "port": "email_Port"
+    },
+    "mongodb": {
+        "host": "email_DB_HOST",
+        "port": "email_DB_PORT",
+        "database": "email_DB_NAME",
+        "auth": {
+            "username": "email_DB_USERNAME",
+            "password": "email_DB_PASSWORD"
+        },
+        "options": "email_MONGODB_OPTIONS"
+    }
+}
