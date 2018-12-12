@@ -19,7 +19,7 @@
     "mongodb": {
         "host": "mongodb",
         "port": 27017,
-        "database": "rest-email",
+        "database": "email-sender",
         "auth": {
             "username": "",
             "password": ""
